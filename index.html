@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Albert J. Ramsbottom — Traditional Fish &amp; Chips, Northampton · Since 1982</title>
+<meta name="description" content="Traditional fish &amp; chips in the heart of Northampton, established 1982. Dine in our fully licensed restaurant or take away. Dedicated gluten-free fryer. 94 Abington Street, NN1 2AP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF2EE;
+  --paper-warm:#F4F4EC;
+  --tint:#C9D6CB;
+  --sea:#7C9B8E;
+  --ink:#1F2D2A;
+  --ink-soft:#3A4A45;
+  --gold:#C8893A;
+  --gold-warm:#E3A744;
+  --rhythm:clamp(1rem,.55rem + 1.05vw,1.18rem);
+  --font-display:"Libre Baskerville",Georgia,"Times New Roman",serif;
+  --font-body:"Work Sans","Helvetica Neue",sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-weight:400;
+  font-size:var(--rhythm);
+  line-height:1.55;
+  letter-spacing:.005em;
+  position:relative;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;inset:0;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' seed='4'/><feColorMatrix values='0 0 0 0 0.12  0 0 0 0 0.18  0 0 0 0 0.16  0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.42'/></svg>");
+  opacity:.18;pointer-events:none;mix-blend-mode:multiply;z-index:1;
+}
+main,header,footer{position:relative;z-index:2}
+
+p,li{text-wrap:pretty;hyphens:auto}
+h1,h2,h3{text-wrap:balance;font-family:var(--font-display);font-weight:700;letter-spacing:-.01em;line-height:1.05}
+a{color:inherit}
+
+/* ------- TOP RIBBON ------- */
+.ribbon{
+  border-top:3px double var(--ink);
+  border-bottom:1px solid var(--ink);
+  background:var(--paper-warm);
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  letter-spacing:.04em;
+}
+.ribbon__inner{
+  max-width:1280px;margin:0 auto;
+  padding:.55rem clamp(1rem,3vw,2rem);
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+}
+.ribbon__inner b{font-weight:700;font-style:normal;color:var(--ink);letter-spacing:.08em;text-transform:uppercase;font-size:.7rem;font-family:var(--font-body);}
+
+/* ------- MASTHEAD ------- */
+.masthead{
+  padding:clamp(1.5rem,4vw,3rem) clamp(1rem,3vw,2rem) clamp(.5rem,2vw,1rem);
+  text-align:center;
+  border-bottom:1px solid var(--ink);
+}
+.masthead__inner{max-width:1280px;margin:0 auto}
+.masthead__kicker{
+  display:flex;align-items:center;gap:1rem;justify-content:center;
+  font-family:var(--font-body);
+  font-weight:500;
+  text-transform:uppercase;
+  letter-spacing:.32em;
+  font-size:.68rem;
+  color:var(--sea);
+  margin-bottom:.9rem;
+}
+.masthead__kicker::before,.masthead__kicker::after{
+  content:"";display:block;height:1px;width:clamp(2rem,10vw,6rem);
+  background:var(--sea);opacity:.65;
+}
+.masthead__title{
+  font-size:clamp(2.4rem,9.5vw,7.5rem);
+  letter-spacing:-.025em;
+  line-height:.95;
+  font-weight:700;
+}
+.masthead__title .amp{
+  color:var(--gold);
+  font-style:italic;
+  font-weight:400;
+  padding:0 .04em;
+}
+.masthead__rule{
+  display:flex;align-items:center;gap:1.2rem;justify-content:center;
+  margin:1.4rem auto .2rem;
+  max-width:980px;
+}
+.masthead__rule hr{border:0;border-top:1px solid var(--ink);flex:1;opacity:.35}
+.masthead__rule span{
+  font-family:var(--font-display);font-style:italic;font-size:.95rem;
+  color:var(--ink-soft);letter-spacing:.02em;
+}
+.masthead__rule b{
+  font-family:var(--font-body);font-weight:600;font-style:normal;
+  color:var(--gold);letter-spacing:.18em;text-transform:uppercase;
+  font-size:.72rem;
+}
+
+/* ------- MARQUEE ------- */
+.marquee{
+  overflow:hidden;
+  background:var(--ink);
+  color:var(--paper);
+  border-bottom:1px solid var(--ink);
+  --speed:42s;
+}
+.marquee__track{
+  display:inline-flex;gap:3rem;white-space:nowrap;
+  padding:.85rem 0;
+  animation:scroll var(--speed) linear infinite;
+  font-family:var(--font-display);font-style:italic;
+  font-size:1.05rem;letter-spacing:.02em;
+}
+.marquee__track span{display:inline-flex;align-items:center;gap:3rem}
+.marquee__track span::after{
+  content:"◆";color:var(--gold-warm);font-size:.6rem;font-style:normal;
+}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee__track{animation:none;justify-content:center;flex-wrap:wrap;white-space:normal}}
+
+/* ------- LEAD / INTRO ------- */
+.lead{
+  padding:clamp(3rem,7vw,6rem) clamp(1rem,3vw,2rem);
+  border-bottom:1px solid var(--ink);
+}
+.lead__inner{
+  max-width:1280px;margin:0 auto;
+  display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4rem);
+}
+@media (min-width:880px){.lead__inner{grid-template-columns:.42fr .58fr;align-items:start}}
+
+.lead__plate{
+  font-family:var(--font-display);
+  font-size:clamp(1.7rem,3.4vw,2.6rem);
+  line-height:1.18;
+  letter-spacing:-.01em;
+  color:var(--ink);
+}
+.lead__plate em{font-style:italic;color:var(--gold)}
+.lead__plate b{
+  display:block;font-family:var(--font-body);font-weight:500;font-style:normal;
+  text-transform:uppercase;letter-spacing:.28em;font-size:.7rem;
+  color:var(--sea);margin-bottom:1.1rem;
+}
+.dropcap::first-letter{
+  font-family:var(--font-display);font-weight:700;
+  float:left;font-size:4.2em;line-height:.85;
+  padding:.32rem .55rem .1rem 0;color:var(--gold);
+}
+.lead__body p+p{margin-top:1.1rem}
+.lead__body p{font-size:1.04rem;color:var(--ink-soft)}
+
+/* ------- COLOURED SLAB ------- */
+.facts{
+  background:var(--tint);
+  border-bottom:1px solid var(--ink);
+  padding:clamp(2rem,5vw,4rem) clamp(1rem,3vw,2rem);
+}
+.facts__inner{
+  max-width:1280px;margin:0 auto;
+  display:grid;gap:1.5rem 2rem;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+}
+.fact{font-family:var(--font-display)}
+.fact b{
+  display:block;font-family:var(--font-body);font-weight:600;font-style:normal;
+  font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--ink);opacity:.7;margin-bottom:.4rem;
+}
+.fact span{font-size:1.55rem;line-height:1.2;letter-spacing:-.01em;color:var(--ink)}
+.fact em{font-style:italic;color:var(--gold)}
+
+/* ------- MENU ------- */
+.menu{
+  padding:clamp(3.5rem,8vw,7rem) clamp(1rem,3vw,2rem);
+  border-bottom:1px solid var(--ink);
+}
+.menu__inner{max-width:1180px;margin:0 auto}
+.menu__masthead{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:1rem;flex-wrap:wrap;
+  margin-bottom:clamp(2rem,4vw,3.5rem);
+  border-bottom:3px double var(--ink);
+  padding-bottom:1.2rem;
+}
+.menu__masthead h2{
+  font-size:clamp(2.4rem,6vw,4.5rem);
+  letter-spacing:-.02em;
+  font-weight:700;
+}
+.menu__masthead h2 em{font-style:italic;color:var(--gold);font-weight:400}
+.menu__masthead p{
+  font-family:var(--font-display);font-style:italic;color:var(--ink-soft);
+  font-size:1rem;max-width:30ch;
+}
+
+.menu__grid{
+  display:grid;gap:clamp(2.5rem,5vw,4.5rem);
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+}
+.section h3{
+  font-family:var(--font-body);font-weight:500;
+  text-transform:uppercase;letter-spacing:.32em;
+  font-size:.72rem;color:var(--sea);
+  margin-bottom:.4rem;
+}
+.section h3 + p{
+  font-family:var(--font-display);font-size:1.65rem;font-weight:700;
+  line-height:1.1;letter-spacing:-.01em;color:var(--ink);
+  margin-bottom:1.5rem;
+}
+.section h3 + p em{font-style:italic;color:var(--gold);font-weight:400}
+.section ul{list-style:none}
+.section li{
+  display:flex;align-items:baseline;gap:.6rem;
+  padding:.55rem 0;
+  border-bottom:1px dotted color-mix(in oklab,var(--ink) 40%,transparent);
+  font-family:var(--font-display);font-size:1.05rem;color:var(--ink);
+}
+.section li:last-child{border-bottom:0}
+.section li i{
+  flex:1;font-style:italic;color:var(--ink-soft);font-size:.85rem;
+  text-align:right;letter-spacing:.02em;
+}
+.section li b{font-weight:400}
+
+.menu__foot{
+  margin-top:clamp(2.5rem,5vw,4rem);
+  padding:1.4rem 1.6rem;
+  border:1px solid var(--ink);
+  background:var(--paper-warm);
+  display:flex;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;
+  font-family:var(--font-display);font-style:italic;color:var(--ink-soft);
+  font-size:.95rem;
+}
+.menu__foot b{
+  font-family:var(--font-body);font-style:normal;font-weight:600;
+  text-transform:uppercase;letter-spacing:.22em;font-size:.7rem;color:var(--gold);
+  display:block;margin-bottom:.2rem;
+}
+
+/* ------- VISIT ------- */
+.visit{
+  padding:clamp(3.5rem,8vw,7rem) clamp(1rem,3vw,2rem);
+  background:var(--ink);
+  color:var(--paper);
+  border-bottom:1px solid var(--ink);
+}
+.visit__inner{
+  max-width:1280px;margin:0 auto;
+  display:grid;gap:clamp(2rem,5vw,4rem);
+  grid-template-columns:1fr;
+}
+@media (min-width:880px){.visit__inner{grid-template-columns:.55fr .45fr}}
+
+.visit h2{
+  font-size:clamp(2.2rem,5.5vw,4rem);
+  letter-spacing:-.02em;color:var(--paper);margin-bottom:1.6rem;
+}
+.visit h2 em{font-style:italic;color:var(--gold-warm);font-weight:400}
+.visit__lede{
+  font-family:var(--font-display);font-style:italic;
+  font-size:1.15rem;color:color-mix(in oklab,var(--paper) 78%,transparent);
+  margin-bottom:2.4rem;max-width:42ch;
+}
+
+.hours{border-top:1px solid color-mix(in oklab,var(--paper) 28%,transparent)}
+.hours dt,.hours dd{padding:.85rem 0;font-family:var(--font-display);font-size:1.05rem}
+.hours div{
+  display:flex;justify-content:space-between;gap:1rem;
+  border-bottom:1px solid color-mix(in oklab,var(--paper) 18%,transparent);
+}
+.hours dt{font-style:italic;color:color-mix(in oklab,var(--paper) 75%,transparent)}
+.hours dd.closed{color:color-mix(in oklab,var(--paper) 55%,transparent);font-style:italic}
+.hours dd.open{color:var(--gold-warm)}
+
+.contact-card{
+  border:1px solid color-mix(in oklab,var(--paper) 25%,transparent);
+  padding:clamp(1.5rem,3vw,2.4rem);
+  font-family:var(--font-display);
+  display:flex;flex-direction:column;gap:1.6rem;
+}
+.contact-row b{
+  display:block;font-family:var(--font-body);font-weight:500;font-style:normal;
+  text-transform:uppercase;letter-spacing:.28em;font-size:.66rem;
+  color:var(--gold-warm);margin-bottom:.45rem;
+}
+.contact-row span,.contact-row a{
+  font-size:1.15rem;line-height:1.35;letter-spacing:-.005em;
+  text-decoration:none;color:var(--paper);display:block;
+}
+.contact-row a.phone{
+  font-size:clamp(1.7rem,3vw,2.2rem);
+  font-weight:700;color:var(--gold-warm);letter-spacing:-.01em;
+  transition:color .25s;
+}
+.contact-row a.phone:hover{color:var(--paper)}
+.contact-row a.mapping{
+  font-style:italic;font-size:.95rem;
+  color:color-mix(in oklab,var(--paper) 75%,transparent);
+  text-decoration:underline;text-decoration-color:var(--gold);
+  text-underline-offset:4px;
+}
+.contact-row a.mapping:hover{color:var(--gold-warm)}
+
+/* ------- ORDER ------- */
+.order{
+  padding:clamp(3rem,6vw,5rem) clamp(1rem,3vw,2rem);
+  border-bottom:1px solid var(--ink);
+  text-align:center;
+}
+.order__inner{max-width:780px;margin:0 auto}
+.order h2{
+  font-size:clamp(1.9rem,4.5vw,3rem);
+  letter-spacing:-.02em;margin-bottom:.8rem;
+}
+.order h2 em{font-style:italic;color:var(--gold);font-weight:400}
+.order p{
+  font-family:var(--font-display);font-style:italic;color:var(--ink-soft);
+  font-size:1.05rem;margin-bottom:2rem;
+}
+.order__buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:.7rem;
+  padding:1rem 1.6rem;
+  border:1.5px solid var(--ink);
+  background:var(--paper);
+  font-family:var(--font-body);font-weight:600;
+  text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;
+  color:var(--ink);text-decoration:none;
+  transition:background .25s,color .25s,transform .25s;
+}
+.btn:hover{background:var(--ink);color:var(--gold-warm);transform:translateY(-2px)}
+.btn span{color:var(--gold);font-family:var(--font-display);font-style:italic;
+  font-weight:400;text-transform:none;letter-spacing:0;font-size:.95rem;}
+.btn:hover span{color:var(--gold-warm)}
+
+/* ------- FOOTER ------- */
+.foot{
+  padding:clamp(2.5rem,5vw,4rem) clamp(1rem,3vw,2rem) clamp(1.5rem,3vw,2rem);
+  background:var(--paper-warm);
+}
+.foot__inner{
+  max-width:1280px;margin:0 auto;
+  display:grid;gap:clamp(1.5rem,3vw,2.5rem);
+  grid-template-columns:1fr;
+}
+@media (min-width:760px){.foot__inner{grid-template-columns:1fr 1fr 1fr;align-items:start}}
+.foot__col{font-family:var(--font-display);font-size:.95rem;color:var(--ink-soft);line-height:1.55}
+.foot__col b{
+  display:block;font-family:var(--font-body);font-style:normal;font-weight:600;
+  text-transform:uppercase;letter-spacing:.28em;font-size:.66rem;
+  color:var(--ink);margin-bottom:.7rem;
+}
+.foot__col a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .25s,color .25s}
+.foot__col a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.foot__mark{
+  border-top:3px double var(--ink);
+  margin-top:clamp(2rem,4vw,3rem);padding-top:1.4rem;
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  font-family:var(--font-display);font-style:italic;font-size:.78rem;color:var(--ink-soft);
+}
+.foot__mark b{font-style:normal;font-weight:700;color:var(--ink);letter-spacing:.02em}
+
+/* ------- SCROLL REVEAL ------- */
+@supports (animation-timeline: view()) {
+  .reveal{
+    animation:rise both;
+    animation-timeline:view();
+    animation-range:entry 0% cover 24%;
+  }
+  @keyframes rise{
+    from{opacity:0;transform:translateY(1.4rem)}
+    to{opacity:1;transform:none}
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .reveal{animation:none!important;opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="ribbon" role="region" aria-label="Top notice">
+  <div class="ribbon__inner">
+    <span><b>The Northampton Chippy</b> · Vol. 44 · No. 1 · 1982&ndash;present</span>
+    <span>94 Abington Street · NN1&nbsp;2AP · 01604&nbsp;972957</span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <div class="masthead__kicker">Established · Nineteen&nbsp;Eighty&nbsp;Two</div>
+    <h1 class="masthead__title">Albert&nbsp;J.<span class="amp">&nbsp;</span>Ramsbottom</h1>
+    <div class="masthead__rule">
+      <hr>
+      <span>Traditional fish &amp; chips in the heart of Northampton</span>
+      <hr>
+    </div>
+    <div class="masthead__rule">
+      <b>Eat&nbsp;In &nbsp;·&nbsp; Take&nbsp;Away &nbsp;·&nbsp; Fully&nbsp;Licensed</b>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Cooked to order, every order</span>
+    <span>Dedicated gluten-free fryer</span>
+    <span>Mon&ndash;Thu 11:30&ndash;4 &nbsp;·&nbsp; Fri 11:30&ndash;7</span>
+    <span>Cod &nbsp;·&nbsp; Haddock &nbsp;·&nbsp; Plaice &nbsp;·&nbsp; Lemon&nbsp;Sole</span>
+    <span>Mushy peas &amp; proper chips</span>
+    <span>94 Abington Street, NN1&nbsp;2AP</span>
+    <span>Forty-four years on the high street</span>
+    <span>Cooked to order, every order</span>
+    <span>Dedicated gluten-free fryer</span>
+    <span>Mon&ndash;Thu 11:30&ndash;4 &nbsp;·&nbsp; Fri 11:30&ndash;7</span>
+    <span>Cod &nbsp;·&nbsp; Haddock &nbsp;·&nbsp; Plaice &nbsp;·&nbsp; Lemon&nbsp;Sole</span>
+    <span>Mushy peas &amp; proper chips</span>
+    <span>94 Abington Street, NN1&nbsp;2AP</span>
+    <span>Forty-four years on the high street</span>
+  </div>
+</div>
+
+<main>
+
+<section class="lead reveal">
+  <div class="lead__inner">
+    <div class="lead__plate">
+      <b>From the counter</b>
+      Forty-four years of <em>cod, chips,</em> mushy peas &amp; tea &mdash; cooked to order, served at the same address on Abington&nbsp;Street since the lights first came on in 1982.
+    </div>
+    <div class="lead__body">
+      <p class="dropcap">A proper chippy is a quiet sort of place. The fryer hums, the tea brews, the chips come up golden &mdash; not skinny, not greasy, just chips the way chips should be. We&rsquo;ve been doing it this way at 94 Abington Street for more than four decades, and we still cook everything to order, every order.</p>
+      <p>Fish from the sea, batter mixed fresh, chips cut and fried in clean oil. A dedicated gluten-free fryer for those who need it, vegetarian options for those who want them, and a fully licensed dining room for those who fancy a glass with their plaice. Or take it home in paper, the old-fashioned way.</p>
+      <p>No frills, no surprises &mdash; just the fish &amp; chips Northampton has been queueing for since 1982.</p>
+    </div>
+  </div>
+</section>
+
+<section class="facts reveal">
+  <div class="facts__inner">
+    <div class="fact"><b>Established</b><span><em>1982</em></span></div>
+    <div class="fact"><b>Address</b><span>94 Abington Street<br>Northampton, NN1&nbsp;2AP</span></div>
+    <div class="fact"><b>Telephone</b><span><a href="tel:+441604972957" style="text-decoration:none;color:inherit;border-bottom:1px solid var(--ink)">01604 972957</a></span></div>
+    <div class="fact"><b>Trading Days</b><span>Mon&ndash;Fri <em>·</em> Lunchtime &amp; Friday evening</span></div>
+  </div>
+</section>
+
+<section class="menu reveal" id="menu">
+  <div class="menu__inner">
+    <div class="menu__masthead">
+      <h2>The <em>Bill of Fare</em></h2>
+      <p>What we cook, listed plain &mdash; fried to order, never sat under a lamp.</p>
+    </div>
+
+    <div class="menu__grid">
+
+      <div class="section reveal">
+        <h3>i &nbsp;·&nbsp; From the Sea</h3>
+        <p>Fish, <em>battered</em> or breaded.</p>
+        <ul>
+          <li><b>Cod</b><i>battered to order</i></li>
+          <li><b>Haddock</b><i>regular &amp; large</i></li>
+          <li><b>Plaice</b><i>breaded or battered</i></li>
+          <li><b>Lemon Sole</b><i>house favourite</i></li>
+          <li><b>Scampi</b><i>breaded or battered</i></li>
+        </ul>
+      </div>
+
+      <div class="section reveal">
+        <h3>ii &nbsp;·&nbsp; From the Counter</h3>
+        <p>The rest of the <em>chip-shop classics.</em></p>
+        <ul>
+          <li><b>Pukka Pies</b><i>steak, chicken &amp; mushroom</i></li>
+          <li><b>Roasted &amp; fried chicken</b><i>quarter &amp; half</i></li>
+          <li><b>Sausages</b><i>battered or plain</i></li>
+          <li><b>Fishcakes</b><i>made in-house</i></li>
+        </ul>
+      </div>
+
+      <div class="section reveal">
+        <h3>iii &nbsp;·&nbsp; For the Veggies</h3>
+        <p>Cooked in their <em>own fryer.</em></p>
+        <ul>
+          <li><b>Veggie nuggets</b><i>crisp &amp; golden</i></li>
+          <li><b>Bean burger</b><i>in a bun, with chips</i></li>
+          <li><b>Battered halloumi</b><i>seasonal</i></li>
+          <li><b>Salad bowl</b><i>fresh, on request</i></li>
+        </ul>
+      </div>
+
+      <div class="section reveal">
+        <h3>iv &nbsp;·&nbsp; On the Side</h3>
+        <p>The <em>essentials.</em></p>
+        <ul>
+          <li><b>Proper chips</b><i>regular, large, family</i></li>
+          <li><b>Mushy peas</b><i>traditional</i></li>
+          <li><b>Curry sauce</b><i>mild &amp; warming</i></li>
+          <li><b>Bread &amp; butter</b><i>two slices, white</i></li>
+          <li><b>Pickled egg / onion</b><i>jar on the counter</i></li>
+        </ul>
+      </div>
+
+      <div class="section reveal">
+        <h3>v &nbsp;·&nbsp; To Drink</h3>
+        <p>Tea, soft drinks &amp; the <em>licensed list.</em></p>
+        <ul>
+          <li><b>Pot of tea</b><i>proper brew</i></li>
+          <li><b>Soft drinks</b><i>cans &amp; bottles</i></li>
+          <li><b>House wine</b><i>by the glass</i></li>
+          <li><b>Bottled beer</b><i>cold &amp; on hand</i></li>
+        </ul>
+      </div>
+
+      <div class="section reveal">
+        <h3>vi &nbsp;·&nbsp; To Finish</h3>
+        <p>Pudding, <em>if there&rsquo;s room.</em></p>
+        <ul>
+          <li><b>Ice cream</b><i>scoops &amp; cones</i></li>
+          <li><b>Sticky pudding</b><i>with custard</i></li>
+          <li><b>Apple pie</b><i>warm</i></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="menu__foot">
+      <div>
+        <b>Allergens</b>
+        Dedicated gluten-free fryer in operation. Please ask a member of staff for our allergen list before ordering &mdash; we&rsquo;ll happily talk you through it.
+      </div>
+      <div>
+        <b>Today&rsquo;s prices</b>
+        Ask at the counter or call <a href="tel:+441604972957" style="color:var(--gold);text-decoration:underline;text-underline-offset:3px">01604 972957</a> &mdash; menu &amp; prices last updated in shop.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit reveal" id="visit">
+  <div class="visit__inner">
+    <div>
+      <h2>Find us, <em>feed yourself.</em></h2>
+      <p class="visit__lede">A short walk from the Market Square &mdash; second window on the right as you head up Abington Street.</p>
+
+      <dl class="hours" aria-label="Opening hours">
+        <div><dt>Monday</dt><dd class="open">11:30 &mdash; 4:00</dd></div>
+        <div><dt>Tuesday</dt><dd class="open">11:30 &mdash; 4:00</dd></div>
+        <div><dt>Wednesday</dt><dd class="open">11:30 &mdash; 4:00</dd></div>
+        <div><dt>Thursday</dt><dd class="open">11:30 &mdash; 4:00</dd></div>
+        <div><dt>Friday</dt><dd class="open">11:30 &mdash; 7:00</dd></div>
+        <div><dt>Saturday</dt><dd class="closed">Closed</dd></div>
+        <div><dt>Sunday</dt><dd class="closed">Closed</dd></div>
+      </dl>
+    </div>
+
+    <aside class="contact-card">
+      <div class="contact-row">
+        <b>Telephone</b>
+        <a class="phone" href="tel:+441604972957">01604&nbsp;972957</a>
+      </div>
+      <div class="contact-row">
+        <b>Address</b>
+        <span>94 Abington Street<br>Northampton<br>NN1&nbsp;2AP</span>
+        <a class="mapping" href="https://www.google.com/maps/search/?api=1&amp;query=Albert+J+Ramsbottom+94+Abington+Street+Northampton+NN1+2AP" target="_blank" rel="noopener">Open in maps &rarr;</a>
+      </div>
+      <div class="contact-row">
+        <b>The room</b>
+        <span style="font-style:italic;font-size:1rem;color:color-mix(in oklab,var(--paper) 78%,transparent)">Fully licensed dining room. Outdoor seating available. Step-free access. A small room &mdash; busy at lunch &mdash; we recommend a quick ring ahead for a table.</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="order reveal" id="order">
+  <div class="order__inner">
+    <h2>Or have it <em>brought to your door.</em></h2>
+    <p>Delivery is handled by our partners. Tap through to start an order.</p>
+    <div class="order__buttons">
+      <a class="btn" href="https://www.just-eat.co.uk/restaurants-albert-j-ramsbottom-northampton" target="_blank" rel="noopener">
+        Just Eat <span>&rarr;</span>
+      </a>
+      <a class="btn" href="https://www.ubereats.com/gb/store/albert-j-ramsbottom" target="_blank" rel="noopener">
+        Uber Eats <span>&rarr;</span>
+      </a>
+      <a class="btn" href="tel:+441604972957">
+        Call to collect <span>&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <div class="foot__col">
+      <b>The Shop</b>
+      Albert J. Ramsbottom<br>
+      Traditional Fish &amp; Chips<br>
+      <em style="font-style:italic;color:var(--gold)">Established 1982</em>
+    </div>
+    <div class="foot__col">
+      <b>Find Us</b>
+      94 Abington Street<br>
+      Northampton<br>
+      NN1&nbsp;2AP<br>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Albert+J+Ramsbottom+94+Abington+Street+Northampton+NN1+2AP" target="_blank" rel="noopener">Directions &rarr;</a>
+    </div>
+    <div class="foot__col">
+      <b>Get in touch</b>
+      <a href="tel:+441604972957">01604&nbsp;972957</a><br>
+      <a href="https://www.facebook.com/p/Albert-J-Ramsbottom-100063113897653/" target="_blank" rel="noopener">Facebook &rarr;</a><br>
+      <a href="https://www.just-eat.co.uk/restaurants-albert-j-ramsbottom-northampton" target="_blank" rel="noopener">Order on Just Eat &rarr;</a>
+    </div>
+  </div>
+  <div class="foot__mark">
+    <span><b>Albert J. Ramsbottom</b> &middot; 94 Abington Street, NN1&nbsp;2AP &middot; Northampton</span>
+    <span>Cod, chips, and the rest of it &mdash; <em>since 1982</em>.</span>
+  </div>
+</footer>
+
+</body>
+</html>
